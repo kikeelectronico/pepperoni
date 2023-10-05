@@ -59,7 +59,7 @@ const config = {
         title: 'Pepperoni',
         logo: {
           alt: 'Pepperoni\'s logo',
-          src: 'img/logo.svg',
+          src: 'img/icon.png',
         },
         items: [
           {
