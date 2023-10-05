@@ -22,7 +22,7 @@ Revisa que dispones de todos los materiales descritos en el BOM. Si usas materia
 
 #### Materiales necesarios
 
-- Pieza impresa `base.3mf`.
+- Pieza impresa `base`.
 - 10 x Inserto metálico para plástico M3.
 
 #### Proceso
