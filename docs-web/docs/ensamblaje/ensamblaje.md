@@ -6,9 +6,15 @@ sidebar_position: 1
 
 Esta guía descbribe el proceso de ensamblaje de Pepperoni.
 
+:::caution Atención
+
+Esta guia no está finalizada y muchas imágenes no están actualziadas.
+
+:::
+
 ## Antes de comenzar
 
-Revisa que dispones de todos los materiales descritos en el BOM. Si usas materiales alternativos puede que necesites improvisar, peor improvisar.
+Revisa que dispones de todos los materiales descritos en el BOM. Si usas materiales alternativos puede que necesites improvisar, pero improvisar mola.
 
 ## Paso a paso
 
@@ -44,10 +50,9 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
 
 #### Proceso
 
-1. Coloca el motor en su espacio del chasis. Presta atención a la alineación de los cables.
-2. Dala vuelta al chasis.
-3. Rota el motor para alinear los 4 taladros.
-4. Atornilla los tornillos para anclar el motor al chasis.
+1. Coloca el motor en su espacio del chasis como se muestra en la siguiente imagen. Presta atención a la alineación de los cables, estos deben guiarse por su correspondiente canal.
+2. Dala vuelta al chasis. Sujeta el motor con una mano para que no se mueva.
+3. Coloca los tornillos para anclar el motor al chasis.
 
 ![Example banner](./assets/step_2.jpg)
 
@@ -67,16 +72,9 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
 3. Coloca el ESC como se aprecia en la imagen.
 4. Fija el ESC al chasis usando la pieza impresa `pinza ESC` y el tornillo M3x16.
 
-:::caution Atención
-
-La imagen no es 100% correcta. En ella no se vé la pienza impresa montada. Fijate en la imagen del siguiente paso para ver como se ensambla.
-
-:::
-
-
 ![Example banner](./assets/step_3.jpg)
 
-### 4. ESC para motores DC.
+### 4. ESC y motores DC.
 
 #### Materiales necesarios
 
@@ -87,7 +85,7 @@ La imagen no es 100% correcta. En ella no se vé la pienza impresa montada. Fija
 
 Para cada motor:
 
-Conecta mediante cables y soldadura el motor DC con el ESC de corriente continua.
+1. Conecta mediante cables y soldadura el motor DC con el ESC de corriente continua.
 
 :::tip
 
@@ -107,7 +105,7 @@ Corta los cables que unen los motores con los ESC de corriente continua con una 
 
 #### Proceso
 
-Repite el proceso para cada rueda.
+Repite el proceso para cada rueda:
 
 1. Coloca el inserto sobre el agujero perpendicular al eje de rotación de la rueda.
 2. Usa un soldador caliente para empujar el inserto dentro del agujero.
@@ -121,7 +119,7 @@ Repite el proceso para cada rueda.
 #### Materiales necesarios
 
 - Subensamblaje del paso 3.
-- Subensamblaje del paso 4.
+- Subensamblaje del paso 5.
 - 2 x Pieza impresa `grapa motor DC`.
 - 2 x Pieza impresa `soporte ESC DC`.
 - 2 x Pieza impresa `separador 2mm`.
@@ -155,7 +153,8 @@ Observa que la pieza impresa cuenta con un protuberancia que encaja en la reduct
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- 2 x Conector XT60.
+- 1 x Conector XT60 macho.
+- 1 x Conector XT60 hembra.
 - 2 x Conector Wago 5 vias.
 - Cable 1 mm² rojo y negro.
 - Interruptor.
