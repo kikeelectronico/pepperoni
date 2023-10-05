@@ -14,7 +14,7 @@ Esta guia no está finalizada y muchas imágenes no están actualziadas.
 
 ## Antes de comenzar
 
-Revisa que dispones de todos los materiales descritos en el BOM. Si usas materiales alternativos puede que necesites improvisar, pero improvisar mola.
+Revisa que dispones de todos los materiales descritos en el [BOM](http://localhost:3000/docs/bom) y de todas las [piezas](http://localhost:3000/docs/printing) impresas en 3d. Si usas materiales alternativos puede que necesites improvisar, pero improvisar mola.
 
 ## Paso a paso
 
