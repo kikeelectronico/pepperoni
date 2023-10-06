@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Ensamblaje
 
-Esta guía descbribe el proceso de ensamblaje de Pepperoni.
+Esta guía describe el proceso de ensamblaje de Pepperoni.
 
 :::caution Atención
 
