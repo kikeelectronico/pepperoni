@@ -332,7 +332,7 @@ Presta especial atención a la orientación de los conectores.
 
 :::danger Peligro
 
-Asegurate de tener bloqueada el árma de forma mecánica antes de conectar la batería. Revisa el doc Bloqueo de arma.
+Asegurate de tener bloqueada el árma de forma mecánica antes de conectar la batería. Revisa el doc [Bloqueo de arma](http://localhost:3000/docs/bloqueos/).
 
 :::
 :::caution Atención
