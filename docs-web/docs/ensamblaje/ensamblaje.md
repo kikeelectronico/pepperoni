@@ -19,7 +19,7 @@ Revisa que dispones de todos los materiales descritos en el [BOM](https://pepper
 
 #### Materiales necesarios
 
-- Pieza impresa `base`.
+- 1 x Pieza impresa `base`.
 - 11 x Inserto metálico para plástico M3.
 
 #### Proceso
@@ -44,7 +44,7 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- Motor brushless.
+- 1 x Motor brushless.
 - 4 x Tornillo M3x4.
 
 #### Proceso
@@ -67,8 +67,8 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- ESC para motor brushless.
-- Pieza impresa `pinza ESC`.
+- 1 x Pieza impresa `pinza ESC`.
+- 1 x ESC para motor brushless.
 - 1 x tornillo M3x16.
 
 #### Proceso
@@ -221,8 +221,8 @@ Completa el montaje de los motores en el chasis colocando los dos conectores Wag
 - Subensamblaje del paso anterior.
 - 1 x Conector XT60 macho.
 - 1 x Conector XT60 hembra.
+- 1 x Interruptor.
 - Cable 1 mm² rojo y negro.
-- Interruptor.
 
 #### Proceso
 
@@ -260,7 +260,7 @@ Si te fijas, el cable del paso 7.1 está dañado. Esto de debe a que estas fotos
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- Receptor RF. 
+- 1 x Receptor RF. 
 
 #### Proceso
 
@@ -318,9 +318,9 @@ Presta especial atención a la orientación de los conectores.
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- Batería.
-- 1 x Tornillo M3x16
-- 1 x Pieza impresa `pinza batería`
+- 1 x Pieza impresa `pinza batería`.
+- 1 x Batería.
+- 1 x Tornillo M3x16.
 
 #### Proceso
 
@@ -346,8 +346,8 @@ Coloca la batería solo cuando vayas a usar el robot.
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- 4 x Tornillo M3x16
-- 1 x Pieza impresa `tapa`
+- 1 x Pieza impresa `tapa`.
+- 4 x Tornillo M3x16.
 
 #### Proceso
 
