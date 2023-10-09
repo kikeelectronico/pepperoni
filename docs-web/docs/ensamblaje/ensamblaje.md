@@ -11,7 +11,7 @@ Esta guía describe el proceso de ensamblaje de Pepperoni.
 
 ## Antes de comenzar
 
-Revisa que dispones de todos los materiales descritos en el [BOM](http://localhost:3000/docs/bom) y de todas las [piezas](http://localhost:3000/docs/printing) impresas en 3d. Si usas materiales alternativos puede que necesites improvisar, pero improvisar mola.
+Revisa que dispones de todos los materiales descritos en el [BOM](https://pepperoni.enriquegomez.me/docs/bom), de todas las piezas [impresas en 3D](https://pepperoni.enriquegomez.me/docs/printing) y de las piezas que conforman el [arma](https://pepperoni.enriquegomez.me/docs/arma/). Si usas materiales alternativos puede que necesites improvisar, pero improvisar mola.
 
 ## Paso a paso
 
@@ -326,7 +326,7 @@ Presta especial atención a la orientación de los conectores.
 
 :::danger Peligro
 
-Asegurate de tener bloqueada el árma de forma mecánica antes de conectar la batería. Revisa el doc [Bloqueo de arma](http://localhost:3000/docs/bloqueos/).
+Asegurate de tener bloqueada el árma de forma mecánica antes de conectar la batería. Revisa el doc [Bloqueo de arma](https://pepperoni.enriquegomez.me/docs/bloqueos/).
 
 :::
 :::caution Atención
