@@ -341,7 +341,7 @@ Coloca la batería solo cuando vayas a usar el robot.
 
 ![Example banner](./assets/step_10.jpg)
 
-### 11. Tapa.
+### 11. Tapa
 
 #### Materiales necesarios
 
