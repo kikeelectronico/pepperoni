@@ -32,6 +32,6 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: docs-web/build
-          domain: pepperoni.enriquegomez.me
+          fqdn: pepperoni.enriquegomez.me
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
