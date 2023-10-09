@@ -86,7 +86,7 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
   </TabItem>
 </Tabs>
 
-### 4. ESC y motores DC.
+### 4. ESC y motores DC
 
 #### Materiales necesarios
 
@@ -111,7 +111,7 @@ Corta los cables con las siguientes longitudes.
 
 ![Example banner](./assets/step_4.jpg)
 
-### 5. Ruedas.
+### 5. Ruedas
 
 #### Materiales necesarios
 
@@ -143,7 +143,7 @@ Repite el proceso para cada rueda:
   </TabItem>
 </Tabs>
 
-### 6. Motores en el chasis.
+### 6. Motores en el chasis
 
 #### Materiales necesarios
 
@@ -214,7 +214,7 @@ Completa el montaje de los motores en el chasis colocando los dos conectores Wag
 
 ![Example banner](./assets/step_6_8.jpg)
 
-### 7. Arnes de cableado.
+### 7. Arnes de cableado
 
 #### Materiales necesarios
 
@@ -255,7 +255,7 @@ Si te fijas, el cable del paso 7.1 está dañado. Esto de debe a que estas fotos
 
 :::
 
-### 8. Receptor.
+### 8. Receptor
 
 #### Materiales necesarios
 
@@ -277,7 +277,7 @@ Presta especial atención a la orientación de los conectores.
 
 ![Example banner](./assets/step_8.jpg)
 
-### 9. Arma.
+### 9. Arma
 
 #### Materiales necesarios
 
@@ -313,7 +313,7 @@ Presta especial atención a la orientación de los conectores.
   </TabItem>
 </Tabs>
 
-### 10. Batería.
+### 10. Batería
 
 #### Materiales necesarios
 
