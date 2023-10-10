@@ -17,5 +17,5 @@ Pepperoni se conforma de multiples piezas impresas en 3D. Todas ellas se pueden 
 | pinza batería |  PLA | 1 |
 | pinza ESC |  PLA | 1 |
 | separador 2 mm |  PLA | 2 |
-| soporte ESC |  PLA | 2 |
+| soporte ESC DC |  PLA | 2 |
 | tapa |  PLA | 1 |
