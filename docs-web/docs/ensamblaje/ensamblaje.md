@@ -37,7 +37,7 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
 
 :::
 
-![Example banner](./assets/step_1.jpg)
+![Base del robot con insertos](./assets/step_1.jpg)
 
 ### 2. Motor del spinner
 
@@ -109,7 +109,7 @@ Corta los cables con las siguientes longitudes.
 
 :::
 
-![Example banner](./assets/step_4.jpg)
+![Motor DC conectado a ESC](./assets/step_4.jpg)
 
 ### 5. Ruedas
 
@@ -202,17 +202,17 @@ Para cada motor:
 
 Observa que la pieza impresa _grapa motor DC_ cuenta con un protuberancia que encaja en la reductora del motor.
 
-![Example banner](./assets/step_6_1_b.jpg)
+![Motor DC junto a la pieza impresa grapa motor DC](./assets/step_6_1_b.jpg)
 
 :::
 
 El resultado tras colocar ambos motores debe ser el siguiente:
 
-![Example banner](./assets/step_6.jpg)
+![Ambos motores y ambos ESC montados en el robot](./assets/step_6.jpg)
 
 Completa el montaje de los motores en el chasis colocando los dos conectores Wago, uno a cada lado del robot. Observa como el conector de masa se encuentra en el lado derecho del robot (parte superior de la foto).
 
-![Example banner](./assets/step_6_8.jpg)
+![Robot con los conectores Wago colocados](./assets/step_6_8.jpg)
 
 ### 7. Arnes de cableado
 
@@ -275,7 +275,7 @@ Presta especial atención a la orientación de los conectores.
 2. Conecta el ESC del motor brushless en el canal 3 del receptor.
 3. Coloca el receptor RF en la parte izquierda del robot tal y como se observa en la imagen.
 
-![Example banner](./assets/step_8.jpg)
+![Robot con el receptor RF colocado](./assets/step_8.jpg)
 
 ### 9. Arma
 
@@ -339,7 +339,7 @@ Coloca la batería solo cuando vayas a usar el robot.
 2. Coloca la batería como se observa en la imagen inferior.
 3. Coloca la pieza <i>pinza batería</i> y fíjala con el tornillo.
 
-![Example banner](./assets/step_10.jpg)
+![Bateria colocada en el robot](./assets/step_10.jpg)
 
 ### 11. Tapa
 
@@ -354,4 +354,4 @@ Coloca la batería solo cuando vayas a usar el robot.
 1. Coloca y alinéa la pieza <i>tapa</i>.
 2. Coloca los cuatro tornillos para fijar la tapa.
 
-![Example banner](./assets/step_11.jpg)
+![Robot cerrado con la tapa superior](./assets/step_11.jpg)

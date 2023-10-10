@@ -12,14 +12,14 @@ El robot cuenta con dos sistemas de bloqueo de arma que se alinean con uno de lo
 
 Se puede introducir un tornillo M3x20 en el inserto roscado desde la parte inferior del robot.
 
-![Example banner](./assets/tornillo_de_bloqueo.jpg)
+![Tornillo de bloqueo](./assets/tornillo_de_bloqueo.jpg)
 
 Desde la parte superior se ve de la siguiente manera:
 
-![Example banner](./assets/arma_bloqueada_por_tornillo.jpg)
+![Arma bloqueada por tornillo](./assets/arma_bloqueada_por_tornillo.jpg)
 
 ## Bloque por barra
 
 Se puede introducir un objeto con forma de barra como un destornillador por el agujero de la tapa que no cuenta con inserto.
 
-![Example banner](./assets/arma_bloqueada_por_barra.jpg)
+![Arma bloqueada por una barra](./assets/arma_bloqueada_por_barra.jpg)
