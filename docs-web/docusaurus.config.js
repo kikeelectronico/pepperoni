@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Pepperoni',
-  tagline: 'Un robot de combate',
+  tagline: 'Un robot de combate de categoría 1 libra',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

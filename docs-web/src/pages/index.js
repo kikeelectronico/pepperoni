@@ -26,9 +26,8 @@ export default function Home() {
       title="Home"
       description="Pepperoni is a combat 'robot'.">
       <HomepageHeader />
-      <main>
-        <img src="/img/home_banner.jpg"/>
-        {/* <HomepageFeatures /> */}
+      <main style={{height: "50vh", backgroundImage:"url('/img/home_banner.jpg')", backgroundPosition: "center", backgroundSize: "cover"}}>
+        <HomepageFeatures />
       </main>
     </Layout>
   );
