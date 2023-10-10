@@ -26,4 +26,4 @@ sidebar_position: 3
 
 *Los enlaces de compra son de ejemplo. Pueden no representar con exactitud el producto.
 
-**El receptor depende de la emisora que vayas a usar. Elige uno compatible.
+**El receptor depende de la emisora que vayas a usar. Elige uno compatible. Yo he usado la emisora Flysky FS-i6.
