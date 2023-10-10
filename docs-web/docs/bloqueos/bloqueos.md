@@ -10,7 +10,7 @@ El robot cuenta con dos sistemas de bloqueo de arma que se alinean con uno de lo
 
 ## Bloqueo por tornillo
 
-Se puede introducir un tornillo M3x20 en el inserto roscado desde la parte inferior del robot.
+Se puede introducir un tornillo M3x25 en el inserto roscado desde la parte inferior del robot.
 
 ![Tornillo de bloqueo](./assets/tornillo_de_bloqueo.jpg)
 

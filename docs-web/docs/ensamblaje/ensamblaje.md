@@ -19,12 +19,12 @@ Revisa que dispones de todos los materiales descritos en el [BOM](https://pepper
 
 #### Materiales necesarios
 
-- 1 x Pieza impresa `base`.
+- 1 x Pieza impresa _base_.
 - 11 x Inserto metálico para plástico M3.
 
 #### Proceso
 
-Introduce los insertos en sus respectivos agujeros. Fijate en la imagen para localizar su posición. 
+Introduce los insertos en sus respectivos agujeros. Fíjate en la imagen para localizar su posición. 
 
 Para cada inserto:
 
@@ -51,12 +51,12 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
 
 <Tabs>
   <TabItem value="step_2_1" label="Paso 2.1" default>
-    Coloca el motor en su espacio del chasis como se muestra en la siguiente imagen. Presta atención a la alineación de los cables, estos deben guiarse por su correspondiente canal.
+    Coloca el motor en su espacio del chasis como se muestra en la siguiente imagen. Presta atención a la alineación de los cables, estos deben guiarse por el correspondiente canal.
     <br/><br/>
     <img src={require("./assets/step_2_1.jpg").default}/>
   </TabItem>
   <TabItem value="step_2_2" label="Paso 2.2">
-     Dala vuelta al chasis y coloca los tornillas para anclar el motor al chásis.
+     Dale la vuelta al chasis y coloca los tornillos para anclar el motor al chásis.
     <br/><br/>
     <img src={require("./assets/step_2_2.jpg").default}/>
   </TabItem>
@@ -67,9 +67,9 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- 1 x Pieza impresa `pinza ESC`.
+- 1 x Pieza impresa _pinza ESC_.
 - 1 x ESC para motor brushless.
-- 1 x tornillo M3x16.
+- 1 x Tornillo M3x16.
 
 #### Proceso
 
@@ -116,8 +116,8 @@ Corta los cables con las siguientes longitudes.
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- 2 x Pieza impresa `llanta`.
-- 2 x Pieza impresa `neumático`.
+- 2 x Pieza impresa _llanta_.
+- 2 x Pieza impresa _neumático_.
 - 2 x Inserto metálico para plástico M3.
 - 2 x Tornillo M3x16.  
 
@@ -127,12 +127,12 @@ Repite el proceso para cada rueda:
 
 <Tabs>
   <TabItem value="step_5_1" label="Paso 5.1" default>
-    Coloca el inserto sobre el agujero perpendicular al eje de rotación de la rueda y atornilla el tornillo girandolo muy pocas vueltas.
+    Coloca el inserto sobre el agujero perpendicular al eje de rotación de la rueda y atornilla el tornillo girándolo muy pocas vueltas.
     <br/><br/>
     <img src={require("./assets/step_5_1.jpg").default}/>
   </TabItem>
   <TabItem value="step_5_2" label="Paso 5.2">
-    Introduce el eje del motor DC por el agujero central de la llanta y apreta el tornillo hasta fijarlos. Ten en cuenta que la cara plana del eje del motor debe estar alineada con el tornillo de la llanta.
+    Introduce el eje del motor DC por el agujero central de la llanta y aprieta el tornillo hasta fijarlos. Ten en cuenta que la cara plana del eje del motor debe estar alineada con el tornillo de la llanta.
     <br/><br/>
     <img src={require("./assets/step_5_2.jpg").default}/>
   </TabItem>
@@ -149,11 +149,11 @@ Repite el proceso para cada rueda:
 
 - Subensamblaje del paso 3.
 - Subensamblaje del paso 5.
-- 2 x Pieza impresa `grapa motor DC`.
-- 2 x Pieza impresa `soporte ESC DC`.
-- 2 x Pieza impresa `separador 2mm`.
-- 4 x tornillo M3x16.
-- 2 x bridas.
+- 2 x Pieza impresa _grapa motor DC_.
+- 2 x Pieza impresa _soporte ESC DC_.
+- 2 x Pieza impresa _separador 2mm_.
+- 4 x Tornillo M3x16.
+- 2 x Bridas 100mm.
 - 2 x Conector Wago 5 vias.
 
 #### Proceso
@@ -182,7 +182,7 @@ Para cada motor:
     <img src={require("./assets/step_6_4.jpg").default}/>
   </TabItem>
   <TabItem value="step_6_5" label="Paso 6.5">
-    Coloca la pieza <i>soporte ESC</i> alineando su agujero con el agujero más alejado de la punta del robot.
+    Coloca la pieza <i>soporte ESC DC</i> alineando su agujero con el agujero más alejado de la punta del robot.
     <br/><br/>
     <img src={require("./assets/step_6_5.jpg").default}/>
   </TabItem>
@@ -200,7 +200,7 @@ Para cada motor:
 
 :::caution Atención
 
-Observa que la pieza impresa _grapa motor DC_ cuenta con un protuberancia que encaja en la reductora del motor.
+Observa que la pieza impresa _grapa motor DC_ cuenta con una protuberancia que encaja en la reductora del motor.
 
 ![Motor DC junto a la pieza impresa grapa motor DC](./assets/step_6_1_b.jpg)
 
@@ -228,7 +228,7 @@ Completa el montaje de los motores en el chasis colocando los dos conectores Wag
 
 <Tabs>
   <TabItem value="step_7_1" label="Paso 7.1" default>
-    Prepara un cable como el de la foto usando el conector CT60 hembra, 32 cm de cable rojo y 18 cm de cable negro.
+    Prepara un cable como el de la foto usando el conector XT60 hembra, 32 cm de cable rojo y 18 cm de cable negro.
     <br/><br/>
     <img src={require("./assets/step_7_1.jpg").default}/>
   </TabItem>
@@ -282,7 +282,7 @@ Presta especial atención a la orientación de los conectores.
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- 2 x Pieza impresa `grapa arma`.
+- 2 x Pieza impresa _grapa arma_.
 - 2 x Hojas del arma.
 - 8 x Tornillos M3x16.
 - 8 x Tuerca M3. 
@@ -318,7 +318,7 @@ Presta especial atención a la orientación de los conectores.
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- 1 x Pieza impresa `pinza batería`.
+- 1 x Pieza impresa _pinza batería_.
 - 1 x Batería.
 - 1 x Tornillo M3x16.
 
@@ -326,7 +326,7 @@ Presta especial atención a la orientación de los conectores.
 
 :::danger Peligro
 
-Asegurate de tener bloqueada el árma de forma mecánica antes de conectar la batería. Revisa el doc [Bloqueo de arma](https://pepperoni.enriquegomez.me/docs/bloqueos/).
+Asegurate de tener bloqueada el árma de forma mecánica antes de conectar la batería. Revisa el documento [Bloqueo de arma](https://pepperoni.enriquegomez.me/docs/bloqueos/).
 
 :::
 :::caution Atención
@@ -346,7 +346,7 @@ Coloca la batería solo cuando vayas a usar el robot.
 #### Materiales necesarios
 
 - Subensamblaje del paso anterior.
-- 1 x Pieza impresa `tapa`.
+- 1 x Pieza impresa _tapa_.
 - 4 x Tornillo M3x16.
 
 #### Proceso
