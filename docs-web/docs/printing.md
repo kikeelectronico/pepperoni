@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Impresión 3D
 
-Pepperoni se conforma de multiples piezas impresas en 3D. Todas ellas se pueden entrar en formato [3mf](https://github.com/kikeelectronico/pepperoni/tree/main/3d-model/3mf) para impresión y en el formato de diseño de [FreeCAD](https://github.com/kikeelectronico/pepperoni/tree/main/3d-model/design).
+Pepperoni se conforma de múltiples piezas impresas en 3D. Todas ellas se pueden entrar en formato [3mf](https://github.com/kikeelectronico/pepperoni/tree/main/3d-model/3mf) para impresión y en el formato de diseño de [FreeCAD](https://github.com/kikeelectronico/pepperoni/tree/main/3d-model/design).
 
 
 | Pieza | Material | Cantidad |

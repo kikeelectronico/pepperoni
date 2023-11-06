@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Emisora
 
-Para Pepperoni he eligido la emisora FlySky FS-i6. A continuación puedes ver la configuración adecuada para el bot.
+Para Pepperoni he elegido la emisora FlySky FS-i6. A continuación puedes ver la configuración adecuada para el bot.
 
 ![Emisora](./assets/emisora.jpg)
 
@@ -12,7 +12,7 @@ Para Pepperoni he eligido la emisora FlySky FS-i6. A continuación puedes ver la
 
 Pepperoni se traslada usando un sistema diferencial de dos ruedas: el motor izquierdo mueve la rueda izquierda y el motor derecho mueve la rueda derecha.
 
-En la emisora, ambos motores se controlan con un solo _joystick_, el derecho. Mover el _joystick_ hacia arriba hace que el bot avance, hacia abajo que retroceda, hacia la derecha que gire sobre sí mismo en sentido horario y hacia la izquierda que gire sobre sí mismo en sentido antiorario.
+En la emisora, ambos motores se controlan con un solo _joystick_, el derecho. Mover el _joystick_ hacia arriba hace que el bot avance, hacia abajo que retroceda, hacia la derecha que gire sobre sí mismo en sentido horario y hacia la izquierda que gire sobre sí mismo en sentido antihorario.
 
 Para conseguir este modo de acción es necesario que configures lo siguiente:
 

@@ -56,7 +56,7 @@ No hagas mucha fuerza con el soldador. Los insertos se introducen muy rápidamen
     <img src={require("./assets/step_2_1.jpg").default}/>
   </TabItem>
   <TabItem value="step_2_2" label="Paso 2.2">
-     Dale la vuelta al chasis y coloca los tornillos para anclar el motor al chásis.
+     Dale la vuelta al chasis y coloca los tornillos para anclar el motor al chasis.
     <br/><br/>
     <img src={require("./assets/step_2_2.jpg").default}/>
   </TabItem>
@@ -154,7 +154,7 @@ Repite el proceso para cada rueda:
 - 2 x Pieza impresa _separador 2mm_.
 - 4 x Tornillo M3x16.
 - 2 x Bridas 100mm.
-- 2 x Conector Wago 5 vias.
+- 2 x Conector Wago 5 vías.
 
 #### Proceso
 
@@ -187,7 +187,7 @@ Para cada motor:
     <img src={require("./assets/step_6_5.jpg").default}/>
   </TabItem>
   <TabItem value="step_6_6" label="Paso 6.6">
-    Atornilla ambas piezas al chásis.
+    Atornilla ambas piezas al chasis.
     <br/><br/>
     <img src={require("./assets/step_6_6.jpg").default}/>
   </TabItem>
@@ -214,7 +214,7 @@ Completa el montaje de los motores en el chasis colocando los dos conectores Wag
 
 ![Robot con los conectores Wago colocados](./assets/step_6_8.jpg)
 
-### 7. Arnes de cableado
+### 7. Arnés de cableado
 
 #### Materiales necesarios
 
@@ -297,7 +297,7 @@ Presta especial atención a la orientación de los conectores.
     <img src={require("./assets/step_9_1.jpg").default}/>
   </TabItem>
   <TabItem value="step_9_2" label="Paso 9.2">
-    Encaja las piezas del paso 9.1 en el motor brushless. Ten encuenta que los pines de alineación de las piezas impresas encajan en los agujeros superiores del motor.
+    Encaja las piezas del paso 9.1 en el motor brushless. Ten en cuenta que los pines de alineación de las piezas impresas encajan en los agujeros superiores del motor.
     <br/><br/>
     <img src={require("./assets/step_9_2.jpg").default}/>
   </TabItem>
@@ -326,7 +326,7 @@ Presta especial atención a la orientación de los conectores.
 
 :::danger Peligro
 
-Asegurate de tener bloqueada el árma de forma mecánica antes de conectar la batería. Revisa el documento [Bloqueo de arma](https://pepperoni.enriquegomez.me/docs/bloqueos/).
+Asegurate de tener bloqueada el arma de forma mecánica antes de conectar la batería. Revisa el documento [Bloqueo de arma](https://pepperoni.enriquegomez.me/docs/bloqueos/).
 
 :::
 :::caution Atención
@@ -351,7 +351,7 @@ Coloca la batería solo cuando vayas a usar el robot.
 
 #### Proceso
 
-1. Coloca y alinéa la pieza <i>tapa</i>.
+1. Coloca y alinea la pieza <i>tapa</i>.
 2. Coloca los cuatro tornillos para fijar la tapa.
 
 ![Robot cerrado con la tapa superior](./assets/step_11.jpg)

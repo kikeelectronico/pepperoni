@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Pepperoni cuenta con un arma cinética que de ser encendida por error puede causar daños personales y materiales. Por favor, ten mucho cuidado al manipular el robot y bloquea el arma, especialmente cuando la batería está conectada.
 
-El robot cuenta con dos sistemas de bloqueo de arma que se alinean con uno de los aguejos del arma para atravesarla.
+El robot cuenta con dos sistemas de bloqueo de arma que se alinean con uno de los agujeros del arma para atravesarla.
 
 ## Bloqueo por tornillo
 
