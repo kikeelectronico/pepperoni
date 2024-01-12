@@ -1,3 +1,3 @@
 # pepperoni
 
-Documentación en proceso en: https://pepperoni.enriquegomez.me
+Documentación en: https://pepperoni.enriquegomez.me
