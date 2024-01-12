@@ -69,7 +69,7 @@ const config = {
             label: 'Documentación',
           },
           {
-            to: 'galery',
+            to: 'galeria',
             position: 'left',
             label: 'Galería',
           },

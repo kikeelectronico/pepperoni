@@ -7,7 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
-export default function Galery() {
+export default function Galeria() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout>
