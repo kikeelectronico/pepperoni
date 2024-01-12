@@ -68,6 +68,11 @@ const config = {
             position: 'left',
             label: 'Documentación',
           },
+          {
+            to: 'galery',
+            position: 'left',
+            label: 'Galería',
+          },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/kikeelectronico/pepperoni',

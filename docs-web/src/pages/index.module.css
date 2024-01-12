@@ -21,3 +21,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.galeryContainer{
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.galeryContainer > h2 {
+  padding-top: 10px;
+}
+
+.videoContainer {
+  width: 100%;
+  text-align:center;
+}
