@@ -91,10 +91,14 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/kikeelectronico/pepperoni',
               },
+              {
+                label: 'Sobre mi',
+                href: 'https://enriquegomez.me/?source=pepperoni',
+              },
             ],
           },
         ],
-        copyright: `Pepperoni by Enrique Gómez since 2023 with love.`,
+        copyright: `Pepperoni by <a href="https://enriquegomez.me/?source=pepperoni" target="_blanck">Enrique Gómez</a> since 2023 with love.`,
       },
       prism: {
         theme: lightCodeTheme,
