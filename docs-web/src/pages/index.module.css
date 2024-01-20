@@ -37,3 +37,14 @@
   width: 100%;
   text-align:center;
 }
+
+@media screen and (max-width: 996px) {
+  .galeryContainer{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .videoContainer > iframe {
+    width: 100%;
+  }
+}
