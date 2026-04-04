@@ -22,6 +22,7 @@ const config = {
   projectName: 'Pepperoni', // Usually your repo name.
 
   onBrokenLinks: 'throw',
+  
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
