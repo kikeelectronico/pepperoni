@@ -87,7 +87,7 @@
     "@algolia/requester-fetch" "5.50.1"
     "@algolia/requester-node-http" "5.50.1"
 
-"@algolia/client-search@5.50.1":
+"@algolia/client-search@5.50.1", "@algolia/client-search@^5.50.1":
   version "5.50.1"
   resolved "https://registry.yarnpkg.com/@algolia/client-search/-/client-search-5.50.1.tgz#c49cb76919adc953000de358aaf14722f2c35c32"
   integrity sha512-OteRb8WubcmEvU0YlMJwCXs3Q6xrdkb0v50/qZBJP1TF0CvujFZQM++9BjEkTER/Jr9wbPHvjSFKnbMta0b4dQ==
@@ -2794,7 +2794,7 @@
     "@types/history" "^4.7.11"
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@^19.2.14":
   version "19.2.14"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.14.tgz#39604929b5e3957e3a6fa0001dafb17c7af70bad"
   integrity sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==
@@ -7541,7 +7541,7 @@ prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7686,6 +7686,13 @@ react-loadable-ssr-addon-v5-slorber@^1.0.1:
   integrity sha512-GXfh9VLwB5ERaCsU6RULh7tkemeX15aNh6wuMEBtfdyMa7fFG8TXrhXlx1SoEK2Ty/l6XIkzzYIQmyaWW3JgdQ==
   dependencies:
     "@babel/runtime" "^7.10.3"
+
+react-loadable@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/react-loadable/-/react-loadable-5.5.0.tgz#582251679d3da86c32aae2c8e689c59f1196d8c4"
+  integrity sha512-C8Aui0ZpMd4KokxRdVAm2bQtI03k2RMRNzOB+IipV3yxFTSVICv7WoUr5L9ALB5BmKO1iHgZtWM8EvYG83otdg==
+  dependencies:
+    prop-types "^15.5.0"
 
 "react-loadable@npm:@docusaurus/react-loadable@6.0.0":
   version "6.0.0"
@@ -8108,6 +8115,11 @@ schema-utils@^4.0.0, schema-utils@^4.0.1, schema-utils@^4.2.0, schema-utils@^4.3
     ajv "^8.9.0"
     ajv-formats "^2.1.1"
     ajv-keywords "^5.1.0"
+
+search-insights@^2.17.3:
+  version "2.17.3"
+  resolved "https://registry.yarnpkg.com/search-insights/-/search-insights-2.17.3.tgz#8faea5d20507bf348caba0724e5386862847b661"
+  integrity sha512-RQPdCYTa8A68uM2jwxoY842xDhvx3E5LFL1LxvxCNMev4o5mLuokczhzjAgGwUZBAmOKZknArSxLKmXtIi2AxQ==
 
 section-matter@^1.0.0:
   version "1.0.0"
