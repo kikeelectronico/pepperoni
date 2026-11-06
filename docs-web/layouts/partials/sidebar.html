@@ -1,8 +1,0 @@
-{{ $current := .RelPermalink }}
-<nav class="docs-nav" aria-label="Documentación">
-  <ul>
-    {{ range (site.GetPage "/docs").Pages.ByWeight }}
-    <li><a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $current }} class="active" aria-current="page"{{ end }}>{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
-</nav>
