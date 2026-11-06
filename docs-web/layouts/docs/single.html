@@ -1,17 +1,23 @@
 {{ define "main" }}
-<div class="docs-layout">
-  <aside class="sidebar">{{ partial "sidebar.html" . }}</aside>
+<div class="docs-layout docs-layout--with-sidebar">
+
+  <aside class="sidebar">
+    {{ partial "sidebar.html" . }}
+  </aside>
+
   <main class="doc-main">
     <article class="markdown">
       <h1>{{ .Title }}</h1>
       {{ .Content }}
     </article>
   </main>
+
   <aside class="toc">
     {{ if .Fragments.Headings }}
-    <div class="toc-title">En esta página</div>
-    {{ .TableOfContents }}
+      <div class="toc-title">En esta página</div>
+      {{ .TableOfContents }}
     {{ end }}
   </aside>
+
 </div>
 {{ end }}

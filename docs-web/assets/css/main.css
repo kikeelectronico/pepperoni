@@ -648,3 +648,78 @@ html.lightbox-open {
   background: var(--link);
   border-color: var(--link);
 }
+
+/* ==================================================
+   Layout de páginas individuales
+   ================================================== */
+
+/*
+ * Documentación:
+ * Columna 1: sidebar
+ * Columna 2: contenido
+ * Columna 3: índice
+ */
+.docs-layout--with-sidebar {
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr) 240px;
+}
+
+/*
+ * Página normal:
+ * Columna 1: espacio reservado para sidebar
+ * Columna 2: contenido
+ * Columna 3: índice
+ *
+ * El espacio de la primera columna se conserva
+ * aunque no exista ningún elemento sidebar.
+ */
+.docs-layout--without-sidebar {
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr) 240px;
+}
+
+/* Posicionar el contenido en la segunda columna */
+.docs-layout--without-sidebar .doc-main {
+  grid-column: 2;
+}
+
+/* Posicionar el índice en la tercera columna */
+.docs-layout--without-sidebar .toc {
+  grid-column: 3;
+}
+
+/* ==================================================
+   Responsive
+   ================================================== */
+
+@media (max-width: 1100px) {
+
+  .docs-layout--with-sidebar,
+  .docs-layout--without-sidebar {
+    grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  }
+
+  .docs-layout--without-sidebar .doc-main {
+    grid-column: 2;
+  }
+
+  .docs-layout--without-sidebar .toc {
+    display: none;
+  }
+
+}
+
+@media (max-width: 996px) {
+
+  .docs-layout--with-sidebar,
+  .docs-layout--without-sidebar {
+    display: block;
+  }
+
+  .docs-layout--without-sidebar .doc-main {
+    grid-column: auto;
+  }
+
+  .docs-layout--without-sidebar .toc {
+    display: none;
+  }
+
+}
