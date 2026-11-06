@@ -22,6 +22,11 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v7
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "stable"
+          cache-dependency-path: docs-web/go.sum
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:

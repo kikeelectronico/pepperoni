@@ -4,12 +4,51 @@ defaultContentLanguage = "es"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 
+[module]
+  proxy = "direct"
+  private = "github.com/kikeelectronico/*"
+
+  [[module.imports]]
+    path = "github.com/kikeelectronico/hugo-docs-theme"
+
 [params]
   tagline = "Un robot de combate de categoría 1 libra"
   description = "Pepperoni es un robot de combate de 1 libra diseñado para competir en OSHWdem 2023."
   github = "https://github.com/kikeelectronico/pepperoni"
   author_url = "https://enriquegomez.me/?source=pepperoni"
   copyright = 'Pepperoni by <a href="https://enriquegomez.me/?source=pepperoni" target="_blank" rel="noopener">Enrique Gómez</a> since 2023 with love.'
+
+  docsSection = "docs"
+  ogLocale = "es_ES"
+
+  # Images (paths relative to static/)
+  logo = "img/icon.png"
+  logoAlt = "Logo de Pepperoni"
+  favicon = "img/favicon.ico"
+  homeBanner = "img/home_banner.jpg"
+  socialImage = "img/social-card.jpg"
+  socialImageAlt = "Pepperoni, un robot de combate de categoría 1 libra con forma de porción de pizza"
+  socialImageWidth = 1200
+  socialImageHeight = 630
+
+  # Colors: only what differs from the theme defaults
+  [params.colors.light]
+    primary = "#ce4b4b"
+    link = "#b21414"
+
+  [params.colors.dark]
+    link = "#e75757"
+
+[menus]
+  [[menus.main]]
+    name = "Documentación"
+    pageRef = "/docs/ensamblaje"
+    weight = 10
+
+  [[menus.main]]
+    name = "Galería"
+    pageRef = "/galeria"
+    weight = 20
 
 [markup]
   [markup.tableOfContents]

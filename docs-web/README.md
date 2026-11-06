@@ -4,7 +4,7 @@ Sitio estático construido con [Hugo](https://gohugo.io/).
 
 ## Desarrollo local
 
-Requiere Hugo.
+Requiere Hugo y Go.
 
 ```
 hugo server
