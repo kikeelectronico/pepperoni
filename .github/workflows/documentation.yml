@@ -7,6 +7,11 @@ on:
     paths:
       - "docs-web/**"
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
@@ -25,12 +30,18 @@ jobs:
         run: |
           cd docs-web
           hugo --minify
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v5
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
         with:
-          target_branch: gh-pages
-          build_dir: docs-web/public
-          fqdn: pepperoni.enriquegomez.me
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: docs-web/public
+
+  deploy:
+    needs: publish
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
