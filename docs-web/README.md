@@ -4,11 +4,24 @@ Sitio estático construido con [Hugo](https://gohugo.io/).
 
 ## Desarrollo local
 
+### Solo web
+
 Requiere Hugo y Go.
 
 ```
 hugo server
 ```
+
+### Web y tema
+
+Requiere Hugo y Go.
+
+```
+HUGO_MODULE_REPLACEMENTS="github.com/kikeelectronico/hugo-docs-theme -> ../../hugo-docs-theme" hugo server
+```
+### Actualizar versión del tema
+
+hugo mod get github.com/kikeelectronico/hugo-docs-theme@v0.2.0
 
 ## Buildear
 
