@@ -68,7 +68,7 @@
 
 // Índice "En esta página": marca en color el apartado que se está leyendo
 (function () {
-  var links = Array.prototype.slice.call(document.querySelectorAll('.toc nav a[href^="#"]'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('.content-toc nav a[href^="#"]'));
   if (!links.length) return;
 
   var items = links.map(function (a) {
@@ -112,7 +112,7 @@
 
 // Índice "En esta página": desplazamiento suave al pulsar un apartado
 (function () {
-  var toc = document.querySelector('.toc nav');
+  var toc = document.querySelector('.content-toc nav');
   if (!toc) return;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   toc.addEventListener('click', function (e) {

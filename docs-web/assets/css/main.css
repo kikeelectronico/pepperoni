@@ -144,60 +144,28 @@ h1 {
   background-position: center;
   background-size: cover;
 }
-/* Pages */
-.page {
-  width: 100%;
-  max-width: 950px;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  flex: 1;
-}
-/* Docs layout */
-.docs-layout {
+/* ========================================
+   Layout compartido: Docs y Pages
+   ======================================== */
+.content-layout {
   display: grid;
   grid-template-columns: var(--sidebar-w) minmax(0, 1fr) 240px;
+  grid-template-areas: "sidebar main toc";
   gap: 2rem;
-  max-width: 1540px;
   width: 100%;
+  max-width: 1540px;
   margin: 0 auto;
   padding: 0 1rem;
   flex: 1;
 }
-.sidebar {
-  position: sticky;
-  top: var(--navbar-h);
-  align-self: start;
-  height: calc(100vh - var(--navbar-h));
-  overflow-y: auto;
-  padding: 1.5rem 1rem 1.5rem 0;
-  border-right: 1px solid var(--border);
-}
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.menu a {
-  display: block;
-  padding: .45rem .75rem;
-  border-radius: 6px;
-  color: var(--text);
-  text-decoration: none;
-}
-.menu a:hover {
-  background: var(--surface);
-}
-.menu a.active {
-  background: color-mix(in srgb, var(--primary) 14%, transparent);
-  color: var(--link);
-  font-weight: 600;
-}
-.doc-main {
-  padding: 2rem 0 3rem;
+.content-main {
+  grid-area: main;
   min-width: 0;
   max-width: 950px;
+  padding: 2rem 0 3rem;
 }
-.toc {
+.content-toc {
+  grid-area: toc;
   position: sticky;
   top: var(--navbar-h);
   align-self: start;
@@ -206,25 +174,61 @@ h1 {
   padding: 2rem 0;
   font-size: .875rem;
 }
+.docs-sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: var(--navbar-h);
+  align-self: start;
+  height: calc(100vh - var(--navbar-h));
+  overflow-y: auto;
+  padding: 1.5rem 1rem 1.5rem 0;
+  border-right: 1px solid var(--border);
+}
+.page-sidebar-space {
+  grid-area: sidebar;
+  min-width: 0;
+}
+.docs-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.docs-nav a {
+  display: block;
+  padding: .45rem .75rem;
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+}
+.docs-nav a:hover {
+  background: var(--surface);
+}
+.docs-nav a.active {
+  background: color-mix(in srgb, var(--primary) 14%, transparent);
+  color: var(--link);
+  font-weight: 600;
+}
 .toc-title {
   font-weight: 700;
   margin-bottom: .5rem;
 }
-.toc nav ul {
+.content-toc nav ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-.toc nav ul ul {
+.content-toc nav ul ul {
   padding-left: 1rem;
 }
-.toc a {
+.content-toc a {
   display: block;
   padding: .15rem 0;
   color: var(--muted);
   text-decoration: none;
+  transition: color .15s;
 }
-.toc a:hover {
+.content-toc a:hover,
+.content-toc a.active {
   color: var(--link);
 }
 /* Markdown */
@@ -282,13 +286,13 @@ h1 {
   background: none;
   padding: 0;
 }
-.doc-cards {
+.docs-cards {
   list-style: none;
   padding: 0;
   display: grid;
   gap: .75rem;
 }
-.doc-cards a {
+.docs-cards a {
   display: block;
   padding: .9rem 1.1rem;
   border: 1px solid var(--border);
@@ -296,7 +300,7 @@ h1 {
   text-decoration: none;
   font-weight: 600;
 }
-.doc-cards a:hover {
+.docs-cards a:hover {
   border-color: var(--primary);
 }
 /* Admonitions */
@@ -434,12 +438,13 @@ h1 {
 .footer-copy a:hover {
   color: var(--link);
 }
-/* Responsive */
+/* Responsive: se conserva la columna del sidebar hasta móvil */
 @media (max-width: 1100px) {
-  .docs-layout {
+  .content-layout {
     grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+    grid-template-areas: "sidebar main";
   }
-  .toc {
+  .content-toc {
     display: none;
   }
 }
@@ -447,22 +452,16 @@ h1 {
   .sidebar-toggle {
     display: inline-block;
   }
-  .docs-layout {
+  .content-layout {
     display: block;
     padding: 0 1rem;
   }
-  .sidebar {
+  .docs-sidebar,
+  .page-sidebar-space {
     display: none;
-    position: fixed;
-    inset: var(--navbar-h) 0 0 0;
-    z-index: 90;
-    height: auto;
-    background: var(--bg);
-    padding: 1rem;
-    border: 0;
   }
-  .sidebar-open .sidebar {
-    display: block;
+  .content-main {
+    max-width: none;
   }
   .hero {
     padding: 2rem 1rem;
@@ -482,7 +481,7 @@ h1 {
   .nav-links {
     display: none;
   }
-  .sidebar, .sidebar-open .sidebar {
+  .docs-sidebar {
     display: none;
   }
   .sidebar-open .mobile-menu {
@@ -530,10 +529,10 @@ h1 {
   }
 }
 /* Índice de la página: apartado activo */
-.toc a {
+.content-toc a {
   transition: color .15s;
 }
-.toc a.active {
+.content-toc a.active {
   color: var(--link);
 }
 /* Visor de imágenes */
@@ -649,77 +648,3 @@ html.lightbox-open {
   border-color: var(--link);
 }
 
-/* ==================================================
-   Layout de páginas individuales
-   ================================================== */
-
-/*
- * Documentación:
- * Columna 1: sidebar
- * Columna 2: contenido
- * Columna 3: índice
- */
-.docs-layout--with-sidebar {
-  grid-template-columns: var(--sidebar-w) minmax(0, 1fr) 240px;
-}
-
-/*
- * Página normal:
- * Columna 1: espacio reservado para sidebar
- * Columna 2: contenido
- * Columna 3: índice
- *
- * El espacio de la primera columna se conserva
- * aunque no exista ningún elemento sidebar.
- */
-.docs-layout--without-sidebar {
-  grid-template-columns: var(--sidebar-w) minmax(0, 1fr) 240px;
-}
-
-/* Posicionar el contenido en la segunda columna */
-.docs-layout--without-sidebar .doc-main {
-  grid-column: 2;
-}
-
-/* Posicionar el índice en la tercera columna */
-.docs-layout--without-sidebar .toc {
-  grid-column: 3;
-}
-
-/* ==================================================
-   Responsive
-   ================================================== */
-
-@media (max-width: 1100px) {
-
-  .docs-layout--with-sidebar,
-  .docs-layout--without-sidebar {
-    grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
-  }
-
-  .docs-layout--without-sidebar .doc-main {
-    grid-column: 2;
-  }
-
-  .docs-layout--without-sidebar .toc {
-    display: none;
-  }
-
-}
-
-@media (max-width: 996px) {
-
-  .docs-layout--with-sidebar,
-  .docs-layout--without-sidebar {
-    display: block;
-  }
-
-  .docs-layout--without-sidebar .doc-main {
-    grid-column: auto;
-  }
-
-  .docs-layout--without-sidebar .toc {
-    display: none;
-  }
-
-}
