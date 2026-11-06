@@ -1,0 +1,33 @@
+{{ $section := .Section }}
+{{ $current := .RelPermalink }}
+<header class="navbar">
+  <div class="navbar-inner">
+    <button class="sidebar-toggle" type="button" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">☰</button>
+    <a class="brand" href="{{ "/" | relURL }}">
+      <img src="{{ "img/icon.png" | relURL }}" alt="Logo de Pepperoni" width="32" height="32">
+      <strong>{{ site.Title }}</strong>
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="{{ "docs/ensamblaje/" | relURL }}"{{ if eq $section "docs" }} class="active"{{ end }}>Documentación</a>
+      <a href="{{ "galeria/" | relURL }}"{{ if eq $current (relURL "galeria/") }} class="active"{{ end }}>Galería</a>
+    </nav>
+    <div class="nav-right">
+      <a href="{{ site.Params.github }}" target="_blank" rel="noopener">GitHub</a>
+      <button class="theme-toggle" type="button" aria-label="Cambiar entre modo claro y oscuro"></button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+    <ul>
+      <li>
+        <a class="mm-parent{{ if eq $section "docs" }} active{{ end }}" href="{{ "docs/ensamblaje/" | relURL }}">Documentación</a>
+        <ul class="mm-sub">
+          {{ range (site.GetPage "/docs").Pages.ByWeight }}
+          <li><a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $current }} class="active" aria-current="page"{{ end }}>{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </li>
+      <li><a class="mm-parent{{ if eq $current (relURL "galeria/") }} active{{ end }}" href="{{ "galeria/" | relURL }}">Galería</a></li>
+      <li><a class="mm-parent" href="{{ site.Params.github }}" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </nav>
+</header>

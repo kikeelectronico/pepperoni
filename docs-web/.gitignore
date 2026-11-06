@@ -1,20 +1,12 @@
-# Dependencies
-/node_modules
+# Resultado de la compilación de Hugo
+/public/
 
-# Production
-/build
+# Caché de imágenes y recursos procesados
+/resources/_gen/
 
-# Generated files
-.docusaurus
-.cache-loader
+# Bloqueo del servidor de desarrollo
+.hugo_build.lock
 
-# Misc
+# Varios
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.env

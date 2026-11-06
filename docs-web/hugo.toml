@@ -1,0 +1,19 @@
+baseURL = "https://pepperoni.enriquegomez.me/"
+title = "Pepperoni"
+defaultContentLanguage = "es"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  tagline = "Un robot de combate de categoría 1 libra"
+  description = "Pepperoni es un robot de combate de 1 libra diseñado para competir en OSHWdem 2023."
+  github = "https://github.com/kikeelectronico/pepperoni"
+  author_url = "https://enriquegomez.me/?source=pepperoni"
+  copyright = 'Pepperoni by <a href="https://enriquegomez.me/?source=pepperoni" target="_blank" rel="noopener">Enrique Gómez</a> since 2023 with love.'
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+  [markup.highlight]
+    style = "github"

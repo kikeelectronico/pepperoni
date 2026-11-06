@@ -1,41 +1,60 @@
-# Website
+# Web de documentación de Pepperoni
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Sitio estático construido con [Hugo](https://gohugo.io/). No depende de ningún tema externo: el tema vive en `layouts/` y `assets/`.
 
-### Installation
+## Desarrollo local
 
-```
-$ yarn
-```
-
-### Local Development
+Requiere Hugo (versión estándar, no hace falta la *extended*; recomendado ≥ 0.128).
 
 ```
-$ yarn start
+hugo server
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+## Compilar
 
 ```
-$ yarn build
+hugo --minify
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+El resultado queda en `public/`.
 
-### Deployment
+## Estructura
 
-Using SSH:
+| Ruta | Contenido |
+| - | - |
+| `content/_index.md` | Portada |
+| `content/docs/` | Documentación. El orden del menú lateral sale de `weight` en el front matter |
+| `content/docs/<tema>/index.md` | Páginas con imágenes propias (carpeta `assets/` junto al `index.md`) |
+| `content/galeria.md` | Galería de vídeos |
+| `layouts/shortcodes/` | `admonition`, `tabs`/`tab` y `yt` |
+| `assets/css/main.css` | Estilos (modo claro/oscuro incluido) |
+| `static/` | Archivos servidos tal cual (`img/`, favicon…) |
+
+## Shortcodes
+
+Aviso (equivale a `:::tip` de Docusaurus). Tipos: `note`, `tip`, `info`, `caution`, `danger`.
 
 ```
-$ USE_SSH=true yarn deploy
+{{< admonition type="danger" title="Peligro" >}}
+Texto en **markdown**.
+{{< /admonition >}}
 ```
 
-Not using SSH:
+Pestañas (equivale a `<Tabs>` / `<TabItem>`):
 
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+{{< tabs >}}
+{{< tab label="Paso 1" default="true" >}}
+Texto y ![imagen](assets/foto.jpg)
+{{< /tab >}}
+{{< tab label="Paso 2" >}}
+Otro texto
+{{< /tab >}}
+{{< /tabs >}}
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Vídeo de YouTube:
+
+```
+{{< yt "ID_DEL_VIDEO" "Título accesible" >}}
+```

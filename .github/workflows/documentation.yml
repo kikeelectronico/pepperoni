@@ -7,7 +7,7 @@ on:
     paths:
       - "docs-web/**"
 
-concurrency: 
+concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
@@ -16,22 +16,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v2
-      - name: Set up Node
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v4
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          node-version: "20"
-      - name: Build Docusaurus website
+          hugo-version: "latest"
+      - name: Build Hugo website
         run: |
           cd docs-web
-          npm install 
-          npm run build
+          hugo --minify
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: docs-web/build
+          build_dir: docs-web/public
           fqdn: pepperoni.enriquegomez.me
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

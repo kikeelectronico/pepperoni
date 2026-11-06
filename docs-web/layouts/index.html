@@ -1,0 +1,9 @@
+{{ define "main" }}
+<header class="hero">
+  <div class="container">
+    <h1 class="hero-title">{{ site.Title }}</h1>
+    <p class="hero-subtitle">{{ site.Params.tagline }}</p>
+  </div>
+</header>
+<main class="home-banner" style="background-image:url('{{ "img/home_banner.jpg" | relURL }}')"></main>
+{{ end }}
