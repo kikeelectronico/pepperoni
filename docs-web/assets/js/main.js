@@ -1,3 +1,4 @@
+// Modo oscuro
 (function () {
   var root = document.documentElement;
 
