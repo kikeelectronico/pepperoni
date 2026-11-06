@@ -1,38 +1,28 @@
 # Web de documentación de Pepperoni
 
-Sitio estático construido con [Hugo](https://gohugo.io/). No depende de ningún tema externo: el tema vive en `layouts/` y `assets/`.
+Sitio estático construido con [Hugo](https://gohugo.io/).
 
 ## Desarrollo local
 
-Requiere Hugo (versión estándar, no hace falta la *extended*; recomendado ≥ 0.128).
+Requiere Hugo.
 
 ```
 hugo server
 ```
 
-## Compilar
+## Buildear
 
 ```
 hugo --minify
 ```
 
-El resultado queda en `public/`.
-
-## Estructura
-
-| Ruta | Contenido |
-| - | - |
-| `content/_index.md` | Portada |
-| `content/docs/` | Documentación. El orden del menú lateral sale de `weight` en el front matter |
-| `content/docs/<tema>/index.md` | Páginas con imágenes propias (carpeta `assets/` junto al `index.md`) |
-| `content/galeria.md` | Galería de vídeos |
-| `layouts/shortcodes/` | `admonition`, `tabs`/`tab` y `yt` |
-| `assets/css/main.css` | Estilos (modo claro/oscuro incluido) |
-| `static/` | Archivos servidos tal cual (`img/`, favicon…) |
+El resultado se genera en `public/`.
 
 ## Shortcodes
 
-Aviso (equivale a `:::tip` de Docusaurus). Tipos: `note`, `tip`, `info`, `caution`, `danger`.
+### Aviso
+
+Tipos: `note`, `tip`, `info`, `caution`, `danger`.
 
 ```
 {{< admonition type="danger" title="Peligro" >}}
@@ -40,7 +30,7 @@ Texto en **markdown**.
 {{< /admonition >}}
 ```
 
-Pestañas (equivale a `<Tabs>` / `<TabItem>`):
+### Pestañas
 
 ```
 {{< tabs >}}
@@ -53,7 +43,7 @@ Otro texto
 {{< /tabs >}}
 ```
 
-Vídeo de YouTube:
+### Vídeo de YouTube
 
 ```
 {{< yt "ID_DEL_VIDEO" "Título accesible" >}}
