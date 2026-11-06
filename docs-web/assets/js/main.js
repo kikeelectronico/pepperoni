@@ -172,3 +172,167 @@
     });
   });
 })();
+
+
+// YouTube: consentimiento previo
+(function () {
+  var CONSENT_KEY = 'youtube-consent';
+  var GRANTED_VALUE = 'granted';
+
+  var videos = Array.prototype.slice.call(
+    document.querySelectorAll('.video[data-youtube-id]')
+  );
+
+  var revokeButtons = document.querySelectorAll(
+    '.youtube-consent-revoke'
+  );
+  
+  function hasConsent() {
+    try {
+      return localStorage.getItem(CONSENT_KEY) === GRANTED_VALUE;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function saveConsent() {
+    try {
+      localStorage.setItem(CONSENT_KEY, GRANTED_VALUE);
+    } catch (e) {}
+  }
+
+  function updateRevokeButton() {
+    var granted = hasConsent();
+
+    revokeButtons.forEach(function (button) {
+      button.hidden = !granted;
+    });
+  }
+
+  function createPlaceholder(container) {
+    var placeholder = document.createElement('div');
+    placeholder.className = 'video-consent-placeholder';
+
+    var content = document.createElement('div');
+    content.className = 'video-consent-content';
+
+    var icon = document.createElement('span');
+    icon.className = 'video-consent-icon';
+    icon.setAttribute('aria-hidden', 'true');
+
+    icon.innerHTML =
+      '<svg viewBox="0 0 24 24" focusable="false">' +
+      '<path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/>' +
+      '</svg>';
+
+    var message = document.createElement('p');
+    message.className = 'video-consent-message';
+    message.textContent =
+      'Este vídeo está alojado en YouTube. Al cargarlo, tu navegador se conectará a los servidores de Google y YouTube creará cookies propias, conforme a sus políticas de privacidad y cookies.';
+
+    var privacy = document.createElement('p');
+    privacy.className = 'video-consent-privacy';
+    privacy.textContent =
+      'Tu elección se recordará en este navegador. Puedes revocarla en cualquier momento desde el pie de página.';
+
+    var button = document.createElement('button');
+    button.className = 'video-consent-button';
+    button.type = 'button';
+    button.textContent = 'Cargar vídeo';
+
+    button.addEventListener('click', function () {
+      saveConsent();
+
+      updateRevokeButton();
+
+      // Cargar todos los vídeos sin reproducción automática.
+      videos.forEach(function (video) {
+        mountVideo(video, false);
+      });
+    });
+
+    content.appendChild(icon);
+    content.appendChild(message);
+    content.appendChild(privacy);
+    content.appendChild(button);
+
+    placeholder.appendChild(content);
+
+    container.replaceChildren(placeholder);
+  }
+
+  function mountVideo(container, autoplay) {
+    var videoId = container.getAttribute('data-youtube-id');
+
+    var title =
+      container.getAttribute('data-video-title') ||
+      'Vídeo de YouTube';
+
+    if (!/^[A-Za-z0-9_-]{11}$/.test(videoId || '')) {
+      return;
+    }
+
+    // Evita crear otro iframe si ya existe.
+    if (container.querySelector('iframe')) {
+      return;
+    }
+
+    var iframe = document.createElement('iframe');
+
+    var params = 'rel=0&playsinline=1';
+
+    if (autoplay) {
+      params += '&autoplay=1';
+    }
+
+    iframe.src =
+      'https://www.youtube-nocookie.com/embed/' +
+      encodeURIComponent(videoId) +
+      '?' + params;
+
+    iframe.title = title;
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+
+    iframe.allow =
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+
+    iframe.allowFullscreen = true;
+
+    // Sustituye el aviso por el reproductor.
+    container.replaceChildren(iframe);
+  }
+
+  function revokeConsent() {
+    try {
+      localStorage.removeItem(CONSENT_KEY);
+    } catch (e) {}
+
+    // Elimina los reproductores y vuelve a mostrar los avisos.
+    videos.forEach(function (video) {
+      createPlaceholder(video);
+    });
+
+    updateRevokeButton();
+  }
+
+  // Evento del botón de revocación del footer.
+  revokeButtons.forEach(function (button) {
+    button.addEventListener('click', revokeConsent);
+  });
+
+  // Inicialización de los vídeos.
+  if (hasConsent()) {
+    videos.forEach(function (video) {
+      mountVideo(video, false);
+    });
+  } else {
+    videos.forEach(function (video) {
+      createPlaceholder(video);
+    });
+  }
+
+  // Actualiza la visibilidad del botón del footer.
+  updateRevokeButton();
+
+})();

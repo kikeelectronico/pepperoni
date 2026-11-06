@@ -648,3 +648,186 @@ html.lightbox-open {
   border-color: var(--link);
 }
 
+/* ==================================================
+   YouTube: consentimiento previo
+   ================================================== */
+
+.video--consent {
+  overflow: hidden;
+  border-radius: 6px;
+  background: #171717;
+}
+
+.video-consent-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  color: #fff;
+  text-align: center;
+  background: radial-gradient(
+    circle at center,
+    #343434 0,
+    #202020 55%,
+    #171717 100%
+  );
+}
+
+.video-consent-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  width: min(100%, 460px);
+}
+
+.video-consent-icon {
+  display: block;
+  width: 48px;
+  height: 34px;
+  color: #ff3333;
+}
+
+.video-consent-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.video-consent-message,
+.video-consent-privacy {
+  margin: 0;
+  color: #f2f2f2;
+  line-height: 1.45;
+}
+
+.video-consent-message {
+  font-size: .95rem;
+}
+
+.video-consent-button {
+  padding: .65rem 1.15rem;
+  border: 1px solid #ff3333;
+  border-radius: 6px;
+  background: #d92727;
+  color: #fff;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.video-consent-button:hover {
+  background: #b91f1f;
+}
+
+.video-consent-button:focus-visible,
+.youtube-consent-revoke:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.video-consent-privacy {
+  font-size: .75rem;
+  color: #d0d0d0;
+}
+
+.video-consent-privacy a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.video--error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.video--error p {
+  margin: 0;
+}
+
+/* Revocar consentimiento desde el footer */
+
+.youtube-consent-revoke {
+  display: none;
+  margin: .75rem auto 0;
+  padding: .35rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.youtube-consent-revoke:hover {
+  color: var(--text);
+  border-color: var(--primary);
+}
+
+.youtube-consent-revoke.is-visible {
+  display: block;
+}
+
+/* ==================================================
+   YouTube: gestión del consentimiento en el footer
+   ================================================== */
+
+.youtube-consent-controls {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.youtube-consent-controls:has(.youtube-consent-revoke:not([hidden])) {
+  padding-top: 1.25em;
+}
+
+.youtube-consent-revoke {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  margin: 0;
+  padding: .35rem .65rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--muted);
+  font: inherit;
+  font-size: .75rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.youtube-consent-revoke svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  fill: currentColor;
+  opacity: .8;
+}
+
+.youtube-consent-revoke:hover {
+  color: var(--text);
+  border-color: var(--primary);
+  background: var(--background);
+}
+
+.youtube-consent-revoke:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.youtube-consent-revoke[hidden] {
+  display: none !important;
+}
